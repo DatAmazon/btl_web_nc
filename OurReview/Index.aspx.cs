@@ -27,6 +27,7 @@ namespace OurReview
 
         protected void Page_Load(object sender, EventArgs e)
         {
+
             m_callbackRef = Page.ClientScript.GetCallbackEventReference(
                     this,
                     "args",
@@ -36,6 +37,11 @@ namespace OurReview
                 );
             if (!IsPostBack)
             {
+                if ((int)Session["user_id"] == 0)
+                {
+                    Response.Redirect("~/Login.aspx");
+                }
+                else { 
                 DataTable categoriesTable = GetCategories();
                 rptCategories.DataSource = categoriesTable;
                 rptCategories.DataBind();
@@ -46,6 +52,7 @@ namespace OurReview
 
                 rptPostsByCategories.DataSource = categoriesTable;
                 rptPostsByCategories.DataBind();
+}
             }
         }
         
@@ -124,7 +131,7 @@ namespace OurReview
                 };
                 if (UploadPost(fileName) != 0)
                 {
-                    Response.Write("<script>alert('Đăng bài viết thành công! nội dung trang web sẽ sớm được cập nhật!');</script>");
+                    //Response.Write("<script>alert('Đăng bài viết thành công! nội dung trang web sẽ sớm được cập nhật!');</script>");
                     updateContent();
                 }
                 else

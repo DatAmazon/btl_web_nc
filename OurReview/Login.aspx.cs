@@ -44,10 +44,12 @@ namespace OurReview
                             Session["user_id"] = rd.GetInt32(0);
                             Session["user_avatar"] = rd.GetString(4);
                             Session["user_name"] = rd.GetString(3);
+                            Session["user_pass"] = rd.GetString(2);
 
                             Response.Write(Session["user_id"]);
-                            Response.Write("<script>alert('Đăng nhập thành công! bạn sẽ được chuyển đến trang chủ');" +
-                    "location.replace('" + ConfigurationManager.AppSettings["indexurl"] + "')</script>"); ;
+                            //        Response.Write("<script>alert('Đăng nhập thành công! bạn sẽ được chuyển đến trang chủ');" +
+                            //"location.replace('" + ConfigurationManager.AppSettings["indexurl"] + "')</script>"); ;
+                            Response.Redirect("Index.aspx");
                         }
                         else
                         {

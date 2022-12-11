@@ -229,7 +229,7 @@ end
 exec sp_checkIfLiked 
 
 
-
+select * from tblUsers
 
 
 

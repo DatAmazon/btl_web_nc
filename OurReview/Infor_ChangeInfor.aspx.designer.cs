@@ -11,133 +11,115 @@ namespace OurReview
 {
 
 
-    public partial class Site1
+    public partial class Infor_ChangeInfor
     {
 
         /// <summary>
-        /// head control.
+        /// ScriptManager1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+        protected global::System.Web.UI.ScriptManager ScriptManager1;
 
         /// <summary>
-        /// form1 control.
+        /// UpdatePanel2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.UpdatePanel UpdatePanel2;
 
         /// <summary>
-        /// tbSearch control.
+        /// rptInforGr control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbSearch;
+        protected global::System.Web.UI.WebControls.Repeater rptInforGr;
 
         /// <summary>
-        /// drlSearchOption control.
+        /// Label1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList drlSearchOption;
+        protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
-        /// liUser control.
+        /// changeNameGr control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListItem liUser;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl changeNameGr;
 
         /// <summary>
-        /// liPost control.
+        /// txtName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListItem liPost;
+        protected global::System.Web.UI.WebControls.TextBox txtName;
 
         /// <summary>
-        /// btnSearch control.
+        /// btnCancelUpdateName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSearch;
+        protected global::System.Web.UI.WebControls.Button btnCancelUpdateName;
 
         /// <summary>
-        /// pnAccount control.
+        /// btnUpdateName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pnAccount;
+        protected global::System.Web.UI.WebControls.Button btnUpdateName;
 
         /// <summary>
-        /// imgAvatar control.
+        /// changeAvatarGr control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgAvatar;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl changeAvatarGr;
 
         /// <summary>
-        /// btnUpdateProfile control.
+        /// fulAvatar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnUpdateProfile;
+        protected global::System.Web.UI.WebControls.FileUpload fulAvatar;
 
         /// <summary>
-        /// btnChangePass control.
+        /// btnCancelUpdateAva control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnChangePass;
+        protected global::System.Web.UI.WebControls.Button btnCancelUpdateAva;
 
         /// <summary>
-        /// linkProfile control.
+        /// btnUpdateAva control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button linkProfile;
-
-        /// <summary>
-        /// btnLogout control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnLogout;
-
-        /// <summary>
-        /// ContentPlaceHolder1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        protected global::System.Web.UI.WebControls.Button btnUpdateAva;
     }
 }

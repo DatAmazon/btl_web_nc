@@ -20,9 +20,9 @@ namespace OurReview
             }
         }
 
-        private void checkLoginState ()
+        private void checkLoginState()
         {
-            if (Session["user_id"] == "")
+            if ((int)Session["user_id"] == 0)
             {
                 if (pnAccount.CssClass.Contains("header__account--user"))
                 {
@@ -46,24 +46,32 @@ namespace OurReview
 
         protected void btnUpdateProfile_Click(object sender, EventArgs e)
         {
-            Response.Redirect(ConfigurationManager.AppSettings["changeprofileurl"]);
+            Response.Redirect(ConfigurationManager.AppSettings["changeinforurl"]);
         }
-
+        protected void btnChangePass_Click(object sender, EventArgs e)
+        {
+            Response.Redirect(ConfigurationManager.AppSettings["changepassurl"]);
+        }
         protected void btnLogout_Click(object sender, EventArgs e)
         {
+            Session["user_id"] = 0;
             Session.Abandon();
-            Response.Redirect(ConfigurationManager.AppSettings["loginurl"]);        }
-
+            Response.Redirect(ConfigurationManager.AppSettings["loginurl"]);
+        }
+        protected void linkProfile_Click(object sender, EventArgs e)
+        {
+            Response.Redirect(ConfigurationManager.AppSettings["profileuserurl"]);
+        }
         protected void btnSearch_Click(object sender, EventArgs e)
         {
             string searchtype = "";
             switch (drlSearchOption.SelectedIndex)
             {
-                case 0:searchtype= "usersearchurl";break;
-                case 1:searchtype = "postsearchurl";break;
+                case 0: searchtype = "usersearchurl"; break;
+                case 1: searchtype = "postsearchurl"; break;
             }
-            
-;            Response.Redirect(ConfigurationManager.AppSettings[searchtype] + "?keyword=" + tbSearch.Text);
+
+; Response.Redirect(ConfigurationManager.AppSettings[searchtype] + "?keyword=" + tbSearch.Text);
 
         }
     }

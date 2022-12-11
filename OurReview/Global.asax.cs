@@ -17,7 +17,7 @@ namespace OurReview
 
         protected void Session_Start(object sender, EventArgs e)
         {
-            Session["user_id"] = "";
+            Session["user_id"] = 0;
             Session["user_name"] = "";
             Session["user_email"] = "";
             Session["user_avatar"] = "";

@@ -10,9 +10,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="./Assets/css/global.css" />
     <link rel="stylesheet" href="./Assets/css/register.css"/>
+        <style>
+            html {
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .container {
+                border: 1px solid #0094ff;
+                width: 360px;
+                margin: auto;
+                padding: 20px 0px 20px 0px;
+                border-radius: 2px;
+            }
+        </style>
 </head>
 <body>
     <form id="form1" runat="server">
+        <div class="container">
         <div class="register-body">    
             <img class="register-logo" src="./Assets/img/Logo.png"/ alt="OurReview" title="OurReview"/>
             <div class ="register-input">
@@ -73,6 +91,7 @@
                 <span > Hoặc <a href="#" runat="server" id="loginLink"> Đăng nhập </a> nếu đã có tài khoản</span>
             </div>
         </div>
+       </div>
     </form>
 </body>
 </html>
